@@ -2,14 +2,89 @@
 # is the same as where this file is located and then run:
 # ruby 2-conditionals.rb
 
-# Booleans
+# Coditionals = decision trees
+# if condition --> do something + end
+
+# Booleans --> true or false (no quotes)
+
+this_is_true = true
+puts this_is_true
+
+this_is_false = false
+puts this_is_false
 
 # Boolean Expressions
 
+puts 3 == 2 #equality -> double equals sign
+puts 3 != 2 #non-equality
+puts 3 > 2
+puts 3 < 2
+
 # If Conditional Logic
+
+# this will never run because 3 is not equal to 2
+if 3 == 2
+    puts "this should never run"
+end
+
+if 3 > 2
+    puts "math"
+end
 
 # If/Else Conditional Logic
 
+if 3 == 2
+    puts "this should never be displayed"
+else
+    puts "this should always be displayed"
+end
+
+user_entered_password = "tacos"
+real_password = "secret"
+
+if user_entered_password == real_password
+    puts "you're in!"
+else
+    puts "wrong password"
+end
+
+user_entered_password = "secret"
+real_password = "secret"
+
+if user_entered_password == real_password
+    puts "you're in!"
+else
+    puts "wrong password"
+end
+
+bank_account_balance = 51
+if bank_account_balance >= 50
+    bank_account_balance = bank_account_balance - 50
+    puts "You have withdrawn $50, new balance is $#{bank_account_balance}."
+else   
+    puts "Insufficient funds"
+end
+
 # Elsif Conditional Logic
 
-# Combining Expressions
+your_team_score = 1
+other_team_score = 2
+if your_team_score > other_team_score
+    puts "you won!"
+elsif your_team_score == other_team_score
+    puts "it was a tie!"
+else
+    puts "sorry, you lost :("
+end
+
+# Combining Expressions --> combining multiple conditions
+
+temp = 68
+precip = 0
+
+if temp >= 65 && temp <=90 && precip == 0
+    puts "It's perfect outside!"
+end
+
+# OR: ||
+# AND: &&

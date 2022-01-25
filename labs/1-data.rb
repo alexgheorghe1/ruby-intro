@@ -20,3 +20,14 @@
 # "i would like " + 5 + " tacos"
 # To rectify this, you can convert the number into a string
 # "i would like #{5} tacos"
+
+
+die_1 = rand(1..6)
+die_2 = rand(1..6)
+#create a variable for the total
+dice_total = die_1 + die_2
+
+puts "Welcome to craps. Rolling dice.."
+puts "Die 1: #{die_1}"
+puts "Die 2: #{die_2}"
+puts "The total is: #{dice_total}"
